@@ -7,4 +7,9 @@ export default defineConfig({
     wasm(),
     topLevelAwait()
   ],
+  build: {
+    rollupOptions: {
+      treeshake: false,
+    }
+  }
 })
